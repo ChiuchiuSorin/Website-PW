@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Bike-shop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="produs" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="firma"/>
+              <xs:element type="xs:string" name="nume"/>
+              <xs:element type="xs:decimal" name="pret"/>
+              <xs:element type="xs:decimal" name="nota" minOccurs="0"/>
+              <xs:element type="xs:decimal" name="an_fabricatie" minOccurs="0"/>
+              <xs:element type="xs:decimal" name="stoc" minOccurs="0"/>
+              <xs:element name="componente">
+                <xs:complexType mixed="true">
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="cadru" minOccurs="0"/>
+                    <xs:element type="xs:string" name="furca" minOccurs="0"/>
+                    <xs:element type="xs:string" name="schimator" minOccurs="0"/>
+                    <xs:element type="xs:string" name="frane" minOccurs="0"/>
+                    <xs:element type="xs:string" name="roti" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:integer" name="id" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

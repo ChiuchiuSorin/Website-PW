@@ -1,0 +1,61 @@
+<br>
+<br>
+<svg width="1480" height="720">
+    <defs>
+        <filter id="f3" x="0" y="0" width="200%" height="200%">
+            <feOffset result="offOut" in="SourceAlpha" dx="20" dy="20" />
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+    </defs>
+    <rect x="150" y="180" width="550" height="340" filter="url(#f3)"
+        style="fill:rgb(79, 93, 216);stroke:rgb(0, 0, 0);stroke-width:5;fill-opacity:0.5;stroke-opacity:0.9;" />
+
+    <polygon points="170,10 680,10 730,250 120,250" style="fill:lime;stroke:purple;stroke-width:2" />
+
+    <rect x="220" y="300" width="80" height="80"
+        style="fill:rgb(79, 93, 216);stroke:rgb(0, 0, 0);stroke-width:1;opacity:1;" />
+
+    <rect x="350" y="360" width="100" height="158"
+        style="fill:rgb(209, 106, 22);stroke:rgb(0, 0, 0);stroke-width:1;opacity:1;" />
+    <rect x="450" y="360" width="100" height="158"
+        style="fill:rgb(209, 106, 22);stroke:rgb(0, 0, 0);stroke-width:1;opacity:1;" />
+    <g transform="translate(100,100)">
+        <text id="TextElement" x="0" y="0" style="font-family:Verdana;font-size:24; visibility:hidden"> Bike-Shop
+            <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+            <animateMotion path="M 0 0 L 135 60" begin="0.5s" dur="4s" fill="freeze" />
+            <animate attributeName="fill" attributeType="CSS" from="magenta" to="blue" begin="1s" dur="5s"
+                fill="freeze" />
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="0.5s"
+                dur="4s" fill="freeze" />
+            <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum"
+                begin="1s" dur="5s" fill="freeze" />
+        </text>
+    </g>
+    <circle cx="950" cy="450" r="35" stroke="black" stroke-width="3" fill-opacity="0" />
+    <circle cx="1100" cy="450" r="35" stroke="black" stroke-width="3" fill-opacity="0" />
+
+    <polygon points="950,450,1015,450,1000,380" style="stroke:black;stroke-width:3" fill-opacity="0" />
+    <polygon points="1090,380,1015,450,1000,380" style="stroke:black;stroke-width:3" fill-opacity="0" />
+    <polyline points="1100 450,1090 380, 1090 360, 1070 360" style="fill:none;stroke:black;stroke-width:3" />
+    <polyline points="1000 380, 1000 360, 1020 360" style="fill:none;stroke:black;stroke-width:3" />
+    <g id="R1">
+        <polyline points="950 450, 985 450" style="fill:none;stroke:black;stroke-width:3">
+            <animateTransform attributeName="transform" type="rotate" from="360 950 450" to="0 950 450" dur="4s"
+                repeatCount="indefinite" />
+        </polyline>
+    </g>
+    <use xlink:href="#R1" transform="rotate(90 950 450)" />
+    <use xlink:href="#R1" transform="rotate(180 950 450)" />
+    <use xlink:href="#R1" transform="rotate(270 950 450)" />
+    <!-- <use xlink:href="#R1" transform="rotate(360 390 150)" /> -->
+    <g id="R2">
+        <polyline points="1100 450, 1135 450" style="fill:none;stroke:black;stroke-width:3">
+            <animateTransform attributeName="transform" type="rotate" from="360 1100 450" to="0 1100 450" dur="4s"
+                repeatCount="indefinite" />
+        </polyline>
+    </g>
+    <use xlink:href="#R2" transform="rotate(90 1100 450)" />
+    <use xlink:href="#R2" transform="rotate(180 1100 450)" />
+    <use xlink:href="#R2" transform="rotate(270 1100 450)" />
+</svg>

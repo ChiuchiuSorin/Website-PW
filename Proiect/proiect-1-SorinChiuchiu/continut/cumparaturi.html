@@ -1,0 +1,50 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="formular_inregistrare">
+    <form>
+    <legend>Cumparaturi</legend>
+    <div class="linie">
+        <div class="left_col">
+            <label for="marime">Mărime:</label>
+        </div>
+        <div class="right_col">
+            <select id="type_select" name="type_select" onchange="show()">
+                <option value="web-api">web API</option>
+                <option value="db">IndexedDB</option>
+            </select>
+        </div>
+    </div>
+    <div class="linie">
+        <div class="left_col">
+            <label for="name">Nume:</label>
+        </div>
+        <div class="right_col">
+            <input type="text" id="name" name="name">
+        </div>
+    </div>
+    <div class="linie">
+        <div class="left_col">
+            <label for="cantitate">Cantitate:</label>
+        </div>
+        <div class="right_col">
+            <input type="text" id="cantitate" name="cantitate">
+        </div>
+    </div>
+</form>
+    <br><br>
+    <input type="submit" id="adauga" onclick="adauga_clicked()" value="Adauga">
+    <br>
+    <input type="submit" id="clear" onclick="clear_list()" value="Goleste lista">
+    <br>
+
+</div>
+<br><br>
+<table id="lista_cumparaturi" style="margin:auto;width: 602px;">
+    
+</table>
+<br>
+<br>
+<br>

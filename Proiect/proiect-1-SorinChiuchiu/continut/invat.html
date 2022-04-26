@@ -1,0 +1,96 @@
+<aside class="tab_invat">
+    <div>
+        <a href="#section1">Sectiunea 1</a>
+    </div>
+    <div>
+        <a href="#section2">Sectiunea 2</a>
+    </div>
+    <div>
+        <a href="#section3">Sectiunea 3</a>
+    </div>
+</aside>
+<div id="sections_div" style="display: flex;
+text-align: -webkit-center;
+justify-content: center;
+flex-direction: column;">
+    <section class="S1" id="section1">
+        <h2>Sectiunea 1</h2>
+        <p><b>Versiunea browserului si data si ora de astazi: </b></p>
+        <p id="versiune"></p>
+        <p id="date_time"></p>
+        <button onclick="main()">Arata versiunea si ora</button>
+        <p><b>Locatia curenta este:</b><br></p>
+        <p id="location"></p>
+        <button onclick="get_location()">Arata coordonatele</button>
+
+        <script>
+            main();
+        </script>
+    </section>
+    <br><br><br>
+    <section class="S2" id="section2">
+        <h2>Sectiunea 2</h2>
+        <div class="boder_col">
+            <label for="boder_col">Culoare margine: </label>
+        </div>
+        <div class="boder_col">
+            <input type="color" id="boder_col" name="boder_col">
+        </div>
+        <br>
+        <div class="fill_col">
+            <label for="fill_col">Culoare desen: </label>
+        </div>
+        <div class="fill_col">
+            <input type="color" id="fill_col" name="fill_col">
+        </div>
+        <br>
+        <p id="debug2"></p>
+        <br><br>
+        <p id="debug"></p>
+        <br><br>
+        <canvas id="canvas" onclick="initDraw(event)" width="1200" height="800" style="border:2px solid #000000;">
+        </canvas>
+    </section>
+    <section class="S3" id="section3">
+        <h2>Sectiunea 3</h2>
+        <br />
+        <br />
+        <table id="myTable">
+            <tr id="tableHead">
+                <th>Brand</th>
+                <th>Model</th>
+                <th>Pret</th>
+            </tr>
+            <tr>
+                <td>Pegas</td>
+                <td>Drumuri Grele pro</td>
+                <td>1750</td>
+            </tr>
+            <tr>
+                <td>Devron</td>
+                <td>Riddle Man h1.7</td>
+                <td>1500</td>
+            </tr>
+            <tr>
+                <td>RockRider</td>
+                <td>ST 120</td>
+                <td>1499</td>
+            </tr>
+            <tr>
+                <td>RockRider</td>
+                <td>ST 540</td>
+                <td>2299</td>
+            </tr>
+        </table>
+        <p>Introduceți o nouă linie în tabel:</p>
+        <label for="line">Linia:</label>
+        <input type="number" id="line" min="1" max="100">
+        <button type="button" onclick="rowInsertion()">Insert</button>
+
+        <p>Introduceți o nouă coloană:</p>
+        <label for="column">Coloana:</label>
+        <input type="number" id="column" min="2" max="100">
+        <button type="button" onclick="columnInsertion()">Insert</button>
+    </section>
+</div>
+<br><br><br><br><br><br><br><br>

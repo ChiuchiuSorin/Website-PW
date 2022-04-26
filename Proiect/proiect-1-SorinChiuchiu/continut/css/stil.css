@@ -1,0 +1,275 @@
+html {
+  display: flex;
+  background-image: linear-gradient(to bottom right, rgb(245, 96, 96), yellow, green);
+  justify-content: center;
+  background-size: 500% 500%;
+  animation: rotate_gradient 9s ease infinite;
+}
+
+@keyframes rotate_gradient {
+  0% {
+    background-position: 0% 53%
+  }
+
+  50% {
+    background-position: 100% 48%
+  }
+
+  100% {
+    background-position: 0% 53%
+  }
+}
+
+body {
+  position: relative;
+  size-adjust: fixed;
+  background-color: rgb(108, 207, 105);
+  min-height: 990px
+}
+
+body>footer {
+  position: absolute;
+  bottom: 10px;
+}
+
+.title {
+  display: flex;
+  color: white;
+  justify-content: center;
+}
+
+.S1 {
+  display: block;
+  text-align: center;
+  justify-content: center;
+}
+
+nav {
+  background-color: rgb(171, 228, 159);
+  padding: 10px;
+  border: 1px dashed rgb(189, 85, 85);
+  display: block;
+  text-align: center;
+  justify-content: center;
+}
+
+.a>#x>#y {
+  position: relative;
+
+}
+
+nav>a {
+  position: relative;
+  display: inline-block;
+  font-family: verdana;
+  font-size: 30px;
+  color: rgb(197, 97, 97);
+  padding: 20px 50px;
+  margin: 5px 30px;
+  text-decoration: none;
+  text-align: center;
+  transition: color 1s;
+}
+
+nav>a:hover {
+  text-decoration: underline;
+
+  background-color: beige;
+  color: rgb(62, 145, 145);
+}
+
+nav>a:active {
+  color: darkgreen;
+}
+
+nav>a .link_text {
+  visibility: hidden;
+  font-size: 12px;
+
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: inline;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+
+nav>a .link_text::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+nav>a:hover .link_text {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+
+header>h1>span::first-letter {
+  text-decoration: underline;
+}
+
+main>table div.tabel_despre, table, th, td {
+  border: 1px solid;
+}
+
+main div.tabel_despre, td {
+  padding: 20px;
+  text-align: center;
+}
+
+.formular_inregistrare input, select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.formular_inregistrare label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.formular_inregistrare {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 222px;
+}
+
+.left_col {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.right_col {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.linie:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .left_col, .right_col, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+div.images {
+  position: relative;
+  transition: transform 2s;
+}
+
+div.images:hover {
+  transform: rotate(360deg);
+}
+
+a>span.weekly_rec {
+  transition: font-size 3s, color 3s;
+}
+
+a>span.weekly_rec:hover {
+  font-size: 60px;
+  color: rgb(0, 109, 128);
+}
+
+@media screen and (max-width: 1000px) {
+  div.iframe_site {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  nav>a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.flex_container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.flex_container>div {
+
+  color: black;
+  width: 300px;
+  height: 50px;
+  margin: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.flex_container>div>p {
+  pointer-events: none;
+}
+
+.flex_container>div:hover {
+  width: 800px;
+  height: 500px;
+}
+
+#video:hover {
+  width: 800px;
+  height: 500px;
+}
+
+aside.tab_invat {
+  float: right;
+  font-family: verdana;
+  font-size: 30px;
+  padding: 300px 80px;
+  position: sticky;
+  top: 0;
+}
+
+aside.tab_invat div {
+  padding: 30px 0px;
+}
+
+#canvas {
+  width: 1200px;
+  height: 800px;
+  border: 10px solid transparent;
+
+  background-color: white;
+}
+
+#home_pic th {
+  background-color: aquamarine;
+}
+
+#home_pic td {
+  border: 0px;
+  background-color: linen;
+}
+
+#lista_cumparaturi th{
+  background-color: antiquewhite;
+}
+
+#lista_cumparaturi td{
+  background-color: darkorange;
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bike-shop>
+    <produs id="1">
+        <firma>Devron</firma>
+        <nume>Riddle Man H1.7</nume>
+        <pret>1499</pret>
+        <componente>
+            <cadru>Aluminiu</cadru>
+            <furca>Suntour XCR</furca>
+            <schimator>Microshift</schimator>
+            <frane>hidraulica</frane>
+            <roti>Kenda 27.5x3.0</roti>
+        </componente>
+    </produs>
+    <produs id="2">
+        <firma>Pegas</firma>
+        <nume>Drumuri Grele Pro</nume>
+        <pret>3200</pret>
+        <nota>4.5</nota>
+        <componente>
+            <cadru>Aluminiu</cadru>
+            <furca>Suntour XCR</furca>
+            <schimator>Microshift</schimator>
+            <frane>hidraulica</frane>
+            <roti>Kenda 27.5x3.0</roti>
+        </componente>
+    </produs>
+    <produs id="3">
+        <firma>Devron</firma>
+        <nume>Vulcan 2.9</nume>
+        <pret>5000</pret>
+        <an_fabricatie>2017</an_fabricatie>
+        <componente>
+            <cadru>aluminiu</cadru>
+            <furca>RockShock Recon RL</furca>
+            <schimator>Sram GX</schimator>
+            <frane>Hidraulica</frane>
+            <roti>WTB Ranger 29</roti>
+        </componente>
+    </produs>
+    <produs id="4">
+        <firma>DHS</firma>
+        <nume>Terrana 2604</nume>
+        <pret>980</pret>
+        <stoc>21</stoc>
+        <componente>
+            <cadru>otel</cadru>
+            <furca>GW-711X</furca>
+            <schimator>Shimano Tourney</schimator>
+            <frane>Janta</frane>
+            <roti>26</roti>
+        </componente>
+    </produs>
+</Bike-shop>

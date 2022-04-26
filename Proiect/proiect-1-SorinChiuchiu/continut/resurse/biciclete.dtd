@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Bike-shop (produs)>
+<!ELEMENT produs (firma, nume, pret, componente, nota?, an_fabricatie?, stoc? )>
+<!ATTLIST produs id ID #REQUIRED>
+<!ELEMENT firma (#PCDATA)>
+<!ELEMENT nume (#PCDATA)>
+<!ELEMENT pret (#PCDATA)>
+<!ELEMENT componente (cadru?, furca?, schimator?, frane?, roti?)>
+<!ELEMENT cadru (#PCDATA)>
+<!ELEMENT furca (#PCDATA)>
+<!ELEMENT schimator (#PCDATA)>
+<!ELEMENT frane (#PCDATA)>
+<!ELEMENT roti (#PCDATA)>
+<!ELEMENT nota (#PCDATA)>
+<!ELEMENT an_fabricatie (#PCDATA)>
+<!ELEMENT stoc (#PCDATA)>

@@ -1,0 +1,146 @@
+<div class="formular_inregistrare">
+        <fieldset>
+            <legend>Informații generale:</legend>
+            <div class="linie">
+                <div class="left_col">
+                    <label for="username">Username:</label>
+                </div>
+                <div class="right_col">
+                    <input type="text" id="username" name="username">
+                </div>
+            </div>
+            <div class="linie">
+                <div class="left_col">
+                    <label for="parola">Parola:</label>
+                </div>
+                <div class="right_col">
+                    <input type="text" id="parola" name="parola">
+                </div>
+            </div>
+            <div class="linie">
+                <div class="left_col">
+                    <label for="nume">Nume:</label>
+                </div>
+                <div class="right_col">
+                    <input type="text" id="nume" name="nume">
+                </div>
+            </div>
+            <div class="linie">
+                <div class="left_col">
+                    <label for="prenume">Prenume:</label>
+                </div>
+                <div class="right_col">
+                    <input type="text" id="prenume" name="prenume">
+                </div>
+            </div>
+            <div class="linie">
+                <div class="left_col">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="right_col">
+                    <input type="email" id="email" name="email">
+                </div>
+            </div>
+            <div class="linie">
+                <div class="left_col">
+                    <label for="tel">Telefon:</label>
+                </div>
+                <div class="right_col">
+                    <input type="number" id="tel" name="tel">
+                </div>
+            </div>
+            <div class="linie">
+                <div class="left_col">
+                    <label for="birthday">Data nașterii:</label>
+                </div>
+                <div class="right_col">
+                    <input type="date" id="birthday" name="birthday">
+                </div>
+            </div>
+
+        </fieldset><br>
+        <fieldset>
+            <legend>Informații opționale: </legend>
+
+            <div class="linie">
+                <div class="left_col">
+                    <label for="btime">Ora nașterii: </label>
+                </div>
+                <div class="right_col">
+                    <input type="time" id="btime" name="btime">
+                </div>
+            </div>
+            <div class="linie">
+                <div class="left_col">
+                    <label for="sm-cont">Cont social media:</label>
+                </div>
+                <div class="right_col">
+                    <input type="url" id="sm-cont" name="sm-cont">
+                </div>
+            </div>
+            <div class="linie">
+                <div class="left_col">
+                    <label for="descriere">Descriere:</label>
+                </div>
+                <div class="right_col">
+                    <textarea name="descriere" id="descriere" rows="5" cols="30"></textarea>
+                </div>
+            </div>
+        </fieldset><br>
+        <fieldset>
+            <legend>Preferințe biciclete:</legend>
+
+            <div class="linie">
+                <div class="left_col">
+                    <label for="marime">Mărime:</label>
+                </div>
+                <div class="right_col">
+                    <select id="marime" name="marime">
+                        <option value="s">S</option>
+                        <option value="l">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                    </select>
+                </div>
+            </div>
+            <div class="linie">
+                <div class="left_col">
+                    <label for="favorite-brand-choice">Brand favorit:</label>
+                </div>
+                <div class="right_col">
+                    <input list="favorite-brand" id="favorite-brand-choice" name="favorite-brand-choice" />
+                    <datalist id="favorite-brand">
+                        <option value="Devron">
+                        <option value="DHS">
+                        <option value="Pegas">
+                        <option value="RockRider">
+                        <option value="X Fact">
+                    </datalist>
+                </div>
+            </div>
+            <div class="linie">
+                <div class="left_col">
+                    <label for="favcolor">Culoare favorită:</label>
+                </div>
+                <div class="right_col">
+                    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+                </div>
+            </div>
+            <div class="linie">
+                <div class="left_col">
+                    <label for="pret">Interval de preț dorit:</label>
+                </div>
+                <div class="right_col">
+                    <input type="range" id="pret" name="pret" min="500" max="10000">
+                </div>
+            </div>
+        </fieldset>
+        <br><br>
+        <input type="checkbox" id="agreement" onchange="validate()" name="agreement">Sunt de acord cu condițiile
+        <br><br>
+        <input type="submit" id="inregistrare" onclick="sendData('username', 'parola','inr_raspuns')" value="Inregistrare" disabled>
+</div>
+<p id="inr_raspuns"></p>
+<br>
+<br>
+<br>

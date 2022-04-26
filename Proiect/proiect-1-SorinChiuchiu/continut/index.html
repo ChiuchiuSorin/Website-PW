@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/stil.css" />
+    <script src="js/script.js"></script>
+    <title>Bike-Shop</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title"><img src="imagini/logo.jpg" alt="bike logo" width="75" height="40" />
+            <span>Bike-Shop</span>
+        </h1>
+    </header>
+    <nav>
+        <a href="#" onclick="schimbaContinut('acasa.html')">Acasă<span class="link_text">Pagina de selecție</span></a>
+        <a href="#" onclick="schimbaContinut('despre.html')">Despre<span class="link_text">Despre magazin si misiunea
+                noastră</span></a>
+        <a href="#" onclick="schimbaContinut('inregistreaza.html')">Înregistrează<span class="link_text">Creare
+                cont</span></a>
+        <a href="#" onclick="schimbaContinut('video.html')">Video<span class="link_text">Video review-uri</span></a>
+        <a href="#" onclick="schimbaContinut('desen.html')">Desen<span class="link_text">Animație</span></a>
+        <a href="#" onclick="schimbaContinut('invat.html')">Învăț<span class="link_text">Tutorial</span></a>
+        <a href="#"
+            onclick="schimbaContinut('biciclete.html', '\\..\\js\\biciclete.js', 'incarcaBiciclete')">Biciclete<span class="link_text">Listă Biciclete</span></a>
+        <a href="#" onclick="schimbaContinut('verifica.html')">Verifică<span class="link_text">Logare</span></a>
+        <a href="#"
+            onclick="schimbaContinut('cumparaturi.html', '\\..\\js\\cumparaturi.js', 'load_from_storage')">Cumpărături<span class="link_text">Shopping cart</span></a>
+
+    </nav>
+    <main id="continut">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="home_pic" style="display: flex;justify-content: center;">
+            <img src="imagini/logo.jpg" alt="bike logo" width="300" height="250" style="position: fixed;" />
+
+            <table id="schedule" style="border: 0px;border-spacing: 0px;float: right;padding-left: 1000px;">
+                <tr>
+                    <th>Program zile</th>
+                    <th>Interval orar</th>
+                </tr>
+                <tr>
+                    <td>l-v</td>
+                    <td>9:00-19:00</td>
+                </tr>
+                <tr>
+                    <td>sâmbătă</td>
+                    <td>10:00-17:00</td>
+                </tr>
+                <tr>
+                    <td>duminică</td>
+                    <td>Închis</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <br><br>
+
+        &copy;2022.Bike-Shop
+    </footer>
+</body>
+
+</html>
