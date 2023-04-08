@@ -1,0 +1,43 @@
+<% if(msg !="" ){ %>
+    <div id="logout">
+        <p>
+            Bine ai venit, <%= msg %>!
+        </p>
+        <form action="/logout" method="post">
+            <input type="submit" value="Logout">
+        </form>
+    </div>
+    <% } %>
+
+<div class="formular_inregistrare">
+    <form action="/add_product" method="post">
+        <fieldset>
+            <legend>Informații produs:</legend>
+            <div class="linie">
+                <div class="left_col">
+                    <label for="product_name">Nume:</label>
+                </div>
+                <div class="right_col">
+                    <input type="text" id="product_name" name="product_name">
+                </div>
+            </div>
+            <div class="linie">
+                <div class="left_col">
+                    <label for="product_quantity">Cantitate:</label>
+                </div>
+                <div class="right_col">
+                    <input type="text" id="product_quantity" name="product_quantity">
+                </div>
+            </div>
+            <div class="linie">
+                <div class="left_col">
+                    <label for="product_price">Preț:</label>
+                </div>
+                <div class="right_col">
+                    <input type="text" id="product_price" name="product_price">
+                </div>
+            </div>
+        </fieldset><br>
+        <input type="submit" value="Adaugă produs" id="buton_adaugare" style="width: -webkit-fill-available;">
+    </form>
+</div>

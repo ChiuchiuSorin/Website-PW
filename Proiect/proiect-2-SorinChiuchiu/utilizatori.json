@@ -1,0 +1,28 @@
+{
+    "utilizatori": [
+        {
+            "nume": "test",
+            "parola": "test"
+        },
+        {
+            "nume": "Ana",
+            "parola": "mere"
+        },
+        {
+            "nume": "qqsergiu",
+            "parola": "micro"
+        },
+        {
+            "nume": "student",
+            "parola": "kotlin"
+        },
+        {
+            "nume": "sorin",
+            "parola": "1234"
+        },
+        {
+            "nume": "admin",
+            "parola": "admin"
+        }
+    ]
+}

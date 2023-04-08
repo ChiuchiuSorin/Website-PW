@@ -1,0 +1,34 @@
+{
+  "name": "proiect-2-sorinchiuchiu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HDR-2021-2022/proiect-2-SorinChiuchiu.git"
+  },
+  "author": "Sorin Chiuchiu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HDR-2021-2022/proiect-2-SorinChiuchiu/issues"
+  },
+  "homepage": "https://github.com/HDR-2021-2022/proiect-2-SorinChiuchiu#readme",
+  "dependencies": {
+    "alert": "^5.0.10",
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.2",
+    "mysql": "^2.18.1",
+    "nc": "^1.0.3",
+    "node-fetch": "^3.2.4",
+    "popups": "^1.1.3",
+    "request-ip": "^2.1.3",
+    "sqlite3": "^5.0.8"
+  }
+}

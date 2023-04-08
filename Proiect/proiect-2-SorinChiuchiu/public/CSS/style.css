@@ -1,0 +1,219 @@
+body {
+  position: relative;
+  background-color: #f5d2b7;
+  min-height: 960px;
+  width: -webkit-fill-available;
+  margin: 0px;
+}
+
+body>footer {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+.title {
+  display: flex;
+  /* background: -webkit-linear-gradient(rgb(155, 69, 69), rgb(253, 152, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  justify-content: center;
+  align-items: center;
+}
+
+.title>span {
+  background: -webkit-linear-gradient(rgb(155, 69, 69), rgb(253, 152, 0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav {
+  width: -webkit-fill-available;
+  background-color: rgb(252 255 179);
+  padding: 10px;
+  border: 1px dashed rgb(189, 85, 85);
+  display: block;
+  text-align: center;
+  justify-content: center;
+}
+
+nav>a {
+  position: relative;
+  display: inline-block;
+  font-family: verdana;
+  font-size: 30px;
+  color: rgb(197, 97, 97);
+  padding: 20px 50px;
+  margin: 5px 30px;
+  text-decoration: none;
+  text-align: center;
+  transition: color 1s;
+}
+
+nav>a:hover {
+  text-decoration: underline;
+
+  background-color: beige;
+  color: rgb(62, 145, 145);
+}
+
+nav>a:active {
+  color: darkgreen;
+}
+
+nav>a .link_text {
+  visibility: hidden;
+  font-size: 12px;
+
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: inline;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 120%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+
+nav>a .link_text::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+nav>a:hover .link_text {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  nav>a {
+    float: none;
+    width: 75%;
+  }
+}
+
+.chestionar {
+  display: flex;
+  justify-content: center;
+}
+
+.chestionar input#buton_submit {
+  width: 100%;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.chestionar p {
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.chestionar div#radio_input {
+  font-size: 20px;
+  color: chocolate;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div#logout input {
+  background: none;
+  border: outset;
+  font-size: 18px;
+}
+
+div#logout input:hover {
+  text-decoration: underline;
+  text-decoration: bold;
+  font-weight: bold;
+  color: rgb(25 83 83);
+}
+
+div#container_produse {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  -webkit-text-stroke-width: thin;
+}
+
+div#container_produse p {
+
+  font-style: italic;
+}
+
+div#container_produse input {
+
+  margin-left: 20px;
+}
+
+div#butoane_bd {
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 28px;
+}
+
+#viz_cos {
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+div#cos {
+
+  display: flex;
+  margin-top: 70px;
+  
+flex-direction: column;align-items: center;}
+
+div#continut_cos {
+
+  background-color: azure;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 255px;
+  border: double;
+  font-style: italic;
+  align-items: center;
+  -webkit-text-stroke-width: thin;
+margin-bottom: 40px;}
+
+div.formular_inregistrare {
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+div#rez_chestionar {
+
+  text-align: center;
+  font-size: xxx-large;
+}
+
+div#logout {
+  position: absolute;
+  top: -10px;
+  right: 25px;
+
+}

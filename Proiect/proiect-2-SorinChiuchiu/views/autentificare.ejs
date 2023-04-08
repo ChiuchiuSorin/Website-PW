@@ -1,0 +1,27 @@
+
+<p style="color: red;text-align: center;font-size: x-large;font-weight: bold;"><%= msg %></p>
+
+<div class="formular_inregistrare">
+    <form action="/verificare-autentificare" method="post">
+        <fieldset>
+            <legend>Date client:</legend>
+            <div class="linie">
+                <div class="left_col">
+                    <label for="username">Username:</label>
+                </div>
+                <div class="right_col">
+                    <input type="text" id="username" name="username">
+                </div>
+            </div>
+            <div class="linie">
+                <div class="left_col">
+                    <label for="parola">Parola:</label>
+                </div>
+                <div class="right_col">
+                    <input type="password" id="parola" name="parola">
+                </div>
+            </div>
+        </fieldset><br>
+        <input type="submit" value="Autentificare" id="buton_autentificare" style="width: -webkit-fill-available;">
+    </form>
+</div>

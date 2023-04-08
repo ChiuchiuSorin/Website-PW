@@ -1,0 +1,30 @@
+<% if(msg !="" ){ %>
+    <div id="logout">
+        <p>
+            Bine ai venit, <%= msg %>!
+        </p>
+        <form action="/logout" method="post">
+            <input type="submit" value="Logout">
+        </form>
+    </div>
+    <% } %>
+<div id="cos">
+    <div id="continut_cos">
+        <% if(pret !=0){ for(aux in cos){ %>
+            <p id="cos">
+                <%= cos[aux] %>
+            </p>
+            <% } %>
+                <p id="cos_total">Total nota de plata: <%= pret %>ron</p>
+                <% } else{ %>
+                    <p id="cos">
+                        Nu exista produse in cos!
+                    </p>
+                    <% } %>
+    </div>
+    <% if(pret !=0){ %>
+        <form action="/clear_basket" method="post" >
+            <input type="submit" value="Plătește nota" style="width: 255px;">
+        </form>
+    <% } %>
+</div>

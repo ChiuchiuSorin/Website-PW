@@ -1,0 +1,56 @@
+<% if(msg=="" ){ %>
+    <nav id="autentificare">
+        <a href="/autentificare">Autentificare<span class="link_text">Sign-in</span></a>
+    </nav>
+    <% } %>
+        <div id="butoane_bd">
+            <form action="/creare-bd" method="get">
+                <input type="submit" value="Creare BD" id="buton_creare_BD">
+            </form>
+            <br>
+            <form action="/inserare-bd" method="get">
+                <input type="submit" value="Incarcare BD" id="buton_incarcare_BD" style="margin-left: 20px;">
+            </form>
+            <br>
+            <br>
+
+            <!-- <form action="/vizualizare-produse" method="get">
+    <input type="submit" value="Vizualizare BD" id="buton_vizualizare_BD">
+</form> -->
+        </div>
+        <br>
+
+
+        <% if(msg !="" ){ %>
+            <div id="logout">
+                <p>
+                    Bine ai venit, <%= msg %>!
+                </p>
+                <form action="/logout" method="post">
+                    <input type="submit" value="Logout">
+                </form>
+            </div>
+            <form action="/vizualizare-cos" method="get" id="viz_cos">
+                <input type="submit" value="Vizualizează coș" id="buton_vizualizare_BD">
+            </form>
+            <% } %>
+            <% if(msg == "admin" ){ %>
+                
+                <form action="/admin" method="get" id="viz_cos">
+                    <input type="submit" value="Admin page" id="button_admin">
+                </form>
+                <% } %>
+                <% try { for (let i in produse) { %>
+                    <div id="container_produse">
+                        <p>
+                            <%= "Nume: " + produse[i].nume + " Cantitate: " + produse[i].gramaj + " Pret: " +
+                                produse[i].pret %>
+                        </p>
+                        <% if (msg !="" ) { %>
+                            <form action="/adaugare-cos" method="post">
+                                <input hidden name="id" value="<%= produse[i].id %>">
+                                <input type="submit" value="Adaugă în coș" id="buton_vizualizare_BD">
+                            </form>
+                            <% } %>
+                    </div>
+                    <% } } catch {} %>

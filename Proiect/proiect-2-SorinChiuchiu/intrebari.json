@@ -1,0 +1,29 @@
+{
+    "intrebari": [
+    {
+        "intrebare": "Care este cea mai puternică cafea?",
+        "variante": ["espresso", "latte", "cafea la ibric", "macchiato"],
+        "corect": "0"
+    },
+    {
+        "intrebare": "Care este cel mai energizant ceai?",
+        "variante": ["ceaiul de mușețel", "ceaiul verde", "ceaiul negru", "ceai roșu"],
+        "corect": "2"
+    },
+    {
+        "intrebare": "Aproximativ câte căni de cafea sunt consumate anual la nivel mondial?",
+        "variante": ["900 million", "400 billion", "200 billion", "2 billion"],
+        "corect": "1"
+    },
+    {
+        "intrebare": "În ce țară din Europa se consumă cea mai mare cantitate de cafea?",
+        "variante": ["Italy", "France", "Norway", "Finland"],
+        "corect": "3"
+    },
+    {
+        "intrebare": "Există aproximativ 400 de arome diferite ale vinului. Câte arome diferite are cafeaua?",
+        "variante": ["280", "500", "640", "800"],
+        "corect": "3"
+    }
+    ]
+}

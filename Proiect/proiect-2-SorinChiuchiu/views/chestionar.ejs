@@ -1,0 +1,33 @@
+<% if(msg != null ){ %>
+    <div id="logout">
+        <p>
+            Bine ai venit, <%= msg %>!
+        </p>
+        <form action="/logout" method="post">
+            <input type="submit" value="Logout">
+        </form>
+    </div>
+    <% } %>
+<div class="chestionar">
+    <form action="/rezultat-chestionar" method="post" style="max-width: 600px;">
+        <% for (let i in intrebari) { let c=0; %>
+            <p>
+                <%= intrebari[i].intrebare %>
+            </p>
+            <div id="radio_input">
+            <% for (const v of intrebari[i].variante) { %>
+                
+                <input type="radio" name="q<%= i %>" id="q<%= i %>" value="<%= c++ %>" onchange="validate()" />
+                <label>
+                    <%= v %>
+                </label><br>
+            
+                <% } %> </div><% } %>
+            
+<br>
+<br>
+        <input disabled type="submit" value="Submit" id="buton_submit">
+    </form>
+</div>
+
+<br>
